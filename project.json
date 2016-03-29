@@ -1,0 +1,20 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimesdata.com",
+      "path": "frontier-psychiatrist"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2016/sports/2016-mariners-lineup"
+    }
+  },
+  "title": "Meet the 2016 Mariners starting lineup",
+  "description": "After an eventful offseason, the Mariners' 2016 lineup is much different from last season. Here are the projected starters as Seattle's much-anticipated  season begins.",
+  "url": "http://projects.seattletimes.com/2016/sports/2016-mariners-lineup",
+  "img": "assets/2016mariners_social.JPG",
+  "slug": "2016-mariners-lineup",
+  "tags": ["sports", "mariners", "baseball", "mlb"],
+  "production": true,
+  "sheets": ["1W1WIHHDA7Pbzw5vaCL03SzXBmsqQGy7WFKVOvMiwAP0"]
+}
