@@ -25,10 +25,10 @@
 
         <div class="contents">
 
-          <h1>Meet the 2015 M's</h1>
+          <h1>Meet the 2016 Mariners</h1>
 
           <p>
-            The Mariners are a popular pick to reach the playoffs for the first time since 2001, thanks to a strengthened offense and strong pitching. Can this team improve on last year's 87-win season? Here's the projected opening-day lineup. <a href="http://www.seattletimes.com/sports/mariners/">See more Mariners coverage.</a>
+            One thing is certain: These are not your same old Mariners. After a coaching change and an eventful offseason, Seattle's roster has been through an upheaval. This year, five of the projected starters were not on the team at the beginning of 2015. Meet the projected starters for the M's season opener.</a>
 
             <a class="share"></a>
           </p>
@@ -36,8 +36,8 @@
           <p class="byline">
             <span class="byline-name">Commentary by Scott Hanson</span> &bull;
             <span class="byline-name">Graphics by Rich Boudet</span> &bull;
-            <span class="byline-name">Development by Audrey Carlsen</span>
-            
+            <span class="byline-name">Development by Audrey Carlsen and Nick Eaton</span>
+
           </p>
 
           <p class="instructions">
@@ -49,13 +49,13 @@
 
       </header>
 
-    <% json.MarinersLineup2015_Data.sort(function(a, b) { return a.order - b.order }).forEach(function(player, i) { %>
+    <% json.MarinersLineup2016_Data.sort(function(a, b) { return a.order - b.order }).forEach(function(player, i) { %>
       <section class="parallax-play" data-index="<%= i %>">
         <img src="assets/<%= player.image %>" class="fixable">
         <div class="description pointer <%= player.overlay %>">
-          
+
           <div class="front ">
-            <h3 class="rank"> 
+            <h3 class="rank">
               <div class="number"><%= player.number %></div> <%= player.name %>, <span class="position"><%= player.position %></span><i class="fa fa-times-circle close show"></i>
             </h3>
 
@@ -72,7 +72,7 @@
             <div class="copy">
               <h2>Best Case</h2>
               <p><%= player.best %>
-              
+
               <h2>Worst Case</h2>
               <p><%= player.worst %>
 
@@ -87,14 +87,14 @@
                 <th><%= header %></th>
               <% }); %>
               <tr>
-                <td>2014</td>
-                <% player.season.split(",").forEach(function(stat) { %>
+                <td>2015</td>
+                <% player.season.split("|").forEach(function(stat) { %>
                   <td><%= stat %></td>
                 <% }); %>
               </tr>
               <tr>
                 <td>Career</td>
-                <% player.career.split(",").forEach(function(stat) { %>
+                <% player.career.split("|").forEach(function(stat) { %>
                   <td><%= stat %></td>
                 <% }); %>
               </tr>
